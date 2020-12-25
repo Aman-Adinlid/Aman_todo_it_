@@ -1,13 +1,18 @@
 package lexicon.se;
 
-/**
- * Hello world!
- *
- */
-public class App 
+import lexicon.se.model.Person;
+
+public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Person person = new Person("Amman","Adam",25);
+
+        System.out.println(person.getFirstName());
+        System.out.println(person.getLastName());
+        System.out.println(person.getAge());
+
+
+
     }
 }
