@@ -6,11 +6,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        Person person = new Person("Amman","Adam",25);
+        Person person = new Person(12367,"Aman","Adinlid");
 
         System.out.println(person.getFirstName());
         System.out.println(person.getLastName());
-        System.out.println(person.getAge());
+        System.out.println(person.getId());
 
 
 
