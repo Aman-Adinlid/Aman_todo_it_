@@ -1,23 +1,23 @@
 package lexicon.se.model;
 
 public class Person {
-    private int id;
+    private int personId;
     private String firstName;
     private String lastName;
 
 
-    public Person(int id, String firstName, String lastName) {
-        this.id = id;
+    public Person(int personId, String firstName, String lastName) {
+        this.personId = personId;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public int getId() {
-        return id;
+    public int getPersonId() {
+        return personId;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setPersonId(int personId) {
+        this.personId = personId;
     }
 
     public String getFirstName() {

@@ -8,7 +8,7 @@ public class App
     {
         Person person = new Person(12367,"Aman","Adinlid");
 
-        System.out.println(person.getId());
+        System.out.println(person.getPersonId());
         System.out.println(person.getFirstName());
         System.out.println(person.getLastName());
 
