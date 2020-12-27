@@ -2,7 +2,7 @@ package lexicon.se.model;
 
 public class Todo {
 
-    private int id;
+    private final int id;
     private String description;
     private boolean done;
     private Person assignee;
@@ -11,6 +11,7 @@ public class Todo {
         this.id = id;
         this.description = description;
     }
+
 
     public Todo(int id, String description, boolean done, Person assignee) {
         this.id = id;
@@ -21,10 +22,6 @@ public class Todo {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getDescription() {

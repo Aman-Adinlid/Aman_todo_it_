@@ -1,7 +1,7 @@
 package lexicon.se.model;
 
 public class Person {
-    private int personId;
+    private final int personId;
     private String firstName;
     private String lastName;
 
@@ -10,14 +10,12 @@ public class Person {
         this.personId = personId;
         this.firstName = firstName;
         this.lastName = lastName;
+
+
     }
 
     public int getPersonId() {
         return personId;
-    }
-
-    public void setPersonId(int personId) {
-        this.personId = personId;
     }
 
     public String getFirstName() {
@@ -35,6 +33,6 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-}
 
+}
 
