@@ -1,15 +1,24 @@
 package lexicon.se.model;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 public class PersonTest {
 
-    public static void main(String[] args) {
 
+@Test
+    public void test_createdPerson(){
 
-        Person person = new Person(1765,"Aman","Adam");
+    int personId = 1765;
+    String firstName = "Aman";
+    String lastName = "Adam";
+    Person person = new Person(1765,"Aman","Adam");
 
-        System.out.println(person.getPersonId());
-        System.out.println(person.getFirstName());
-        System.out.println(person.getLastName());
-
-    }
+    Assert.assertEquals(1765,person.getPersonId());
+    Assert.assertEquals("Aman",person.getFirstName());
+    Assert.assertEquals("Adam",person.getLastName());
 }
+
+}
+
+

@@ -16,9 +16,13 @@ public class People {
     }
 
 
-    public static Person[] findAll() {
+    public static Person[] findAll()  {
 
         return personArray;
+    }
+
+    public Person[] findById(int PersonId){
+     return null;
     }
 
 
