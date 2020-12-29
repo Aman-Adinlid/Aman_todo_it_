@@ -21,18 +21,13 @@ public class People {
         return personArray;
     }
 
-    public Person findById(int PersonId) {
 
 
-        Person person = new Person();
 
 
-        public void Clear () {
-            Array.Clear(personArray, 0, personArray.Length);
-        }
+
 
 
     }
 
 
-}

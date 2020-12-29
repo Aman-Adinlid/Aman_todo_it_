@@ -5,13 +5,10 @@ public class Person {
     private String firstName;
     private String lastName;
 
-
-    public Person() {
+    public Person(int personId, String firstName, String lastName) {
         this.personId = personId;
         this.firstName = firstName;
         this.lastName = lastName;
-
-
     }
 
     public int getPersonId() {
@@ -33,6 +30,5 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 }
 
