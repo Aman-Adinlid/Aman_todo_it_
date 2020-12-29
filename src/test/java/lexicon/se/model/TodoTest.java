@@ -1,14 +1,18 @@
 package lexicon.se.model;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 public class TodoTest {
-    public static void main(String[] args) {
+   @Test
 
+    public void test_createdTodo(){
 
-        Todo todo = new Todo(89765, "Good");
-        System.out.println(todo.getId());
-        System.out.println(todo.getDescription());
-
-
-    }
+       int id = 367;
+       String description = "Not bad";
+       Todo todo = new Todo(367,"Not bad");
+       Assert.assertEquals(367,todo.getId());
+       Assert.assertEquals("Not bad",todo.getDescription());
+   }
 }
 
