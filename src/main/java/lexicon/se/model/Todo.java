@@ -13,13 +13,6 @@ public class Todo {
     }
 
 
-    public Todo(int id, String description, boolean done, Person assignee) {
-        this.id = id;
-        this.description = description;
-        this.done = done;
-        this.assignee = assignee;
-    }
-
     public int getId() {
         return id;
     }
