@@ -5,7 +5,7 @@ public class PersonTest {
     public static void main(String[] args) {
 
 
-        Person person = new Person(12367,"Aman","Adinlid");
+        Person person = new Person();
 
         System.out.println(person.getPersonId());
         System.out.println(person.getFirstName());

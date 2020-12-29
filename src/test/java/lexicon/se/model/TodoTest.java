@@ -2,7 +2,7 @@ package lexicon.se.model;
 
 public class TodoTest {
     public static void main(String[] args) {
-        Person person = new Person(222,"AMAN","Adinlid");
+        Person person = new Person();
 
         Todo todo = new Todo(89765, "Good");
         System.out.println(todo.getId());
