@@ -2,19 +2,20 @@ package lexicon.se.data;
 
 public class PersonSequencer {
 
-private static int personId;
+    private static int personId = 0;
 
-public static int nextPersonId(){
+    public static int nextPersonId() {
 
-    return ++personId;
+        return ++personId;
     }
 
-    public static int Reset() {
-        return personId = 0;
+    public static void Reset() {
+        personId = 0;
+
+
     }
-
-
 }
+
 
 
 

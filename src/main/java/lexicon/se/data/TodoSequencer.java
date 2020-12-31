@@ -2,7 +2,8 @@ package lexicon.se.data;
 
 public class TodoSequencer {
 
-    private static int personId;
+
+    private static int personId= 0;
 
     public static int NextTodoId(){
 
@@ -11,8 +12,8 @@ public class TodoSequencer {
 
     }
 
-    public static int Reset(){
-        return personId = 0;
-    }
+    public static void Reset() {
+        personId = 0;
 
+    }
 }
