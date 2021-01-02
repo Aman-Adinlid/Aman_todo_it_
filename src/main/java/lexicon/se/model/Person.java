@@ -1,15 +1,19 @@
 package lexicon.se.model;
 
+import lexicon.se.data.PersonSequencer;
+
 public class Person {
     private final int personId;
+
     private String firstName;
     private String lastName;
+    public Person(){
+        personId = PersonSequencer.nextPersonId();
 
-    public Person(int personId, String firstName, String lastName) {
-        this.personId = personId;
-        this.firstName = firstName;
-        this.lastName = lastName;
     }
+
+
+
 
     public int getPersonId() {
         return personId;

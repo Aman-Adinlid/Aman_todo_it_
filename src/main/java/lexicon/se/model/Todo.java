@@ -1,21 +1,32 @@
 package lexicon.se.model;
 
+import lexicon.se.data.TodoSequencer;
+
 public class Todo {
 
-    private final int id;
+
+    private final int TodoId;
     private String description;
     private boolean done;
     private Person assignee;
 
-    public Todo(int id, String description) {
-        this.id = id;
+    public Todo(){
+       TodoId  = TodoSequencer.NextTodoId();
+
+    }
+
+
+    public Todo(String description) {
         this.description = description;
+        TodoId = TodoSequencer.NextTodoId();
+
+    }
+
+    public int getTodoId() {
+        return TodoId;
     }
 
 
-    public int getId() {
-        return id;
-    }
 
     public String getDescription() {
         return description;

@@ -12,7 +12,7 @@ public class PersonTest {
     int personId = 1765;
     String firstName = "Aman";
     String lastName = "Adam";
-    Person person = new Person(1765,"Aman","Adam");
+    Person person = new Person();
 
     Assert.assertEquals(1765,person.getPersonId());
     Assert.assertEquals("Aman",person.getFirstName());
