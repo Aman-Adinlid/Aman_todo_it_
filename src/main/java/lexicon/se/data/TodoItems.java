@@ -28,10 +28,10 @@ public class TodoItems {
         return findTodo;
     }
 
-    public void addTodo(Todo newThingTodo) {
-        Todo[] newtodoItemsArray = Arrays.copyOf(todoItemsArray, todoItemsArray.length + 1);
-        newtodoItemsArray[newtodoItemsArray.length - 1] = newThingTodo;
-        todoItemsArray = newtodoItemsArray;
+    public void addTodo(Todo newTodo )  {
+        Todo[] newTodoItemsArray = Arrays.copyOf(todoItemsArray, todoItemsArray.length + 1);
+        newTodoItemsArray[newTodoItemsArray.length - 1] = newTodo;
+        todoItemsArray = newTodoItemsArray;
     }
 
     public void clear() {
