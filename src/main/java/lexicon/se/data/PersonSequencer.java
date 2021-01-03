@@ -2,7 +2,7 @@ package lexicon.se.data;
 
 public class PersonSequencer {
 
-    private static int personId = 0;
+    private static int personId= 0;
 
     public static int nextPersonId() {
 
@@ -11,6 +11,7 @@ public class PersonSequencer {
 
     public static void Reset() {
         personId= 0;
+
 
 
     }

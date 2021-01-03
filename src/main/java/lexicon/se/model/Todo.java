@@ -4,29 +4,22 @@ import lexicon.se.data.TodoSequencer;
 
 public class Todo {
 
-
-    private final int TodoId;
+    private final int todoId;
     private String description;
     private boolean done;
-    private Person assignee;
+    Person assignee = new Person();
 
-    public Todo(){
-       TodoId  = TodoSequencer.NextTodoId();
-
+    public Todo() {
+        todoId = TodoSequencer.NextTodoId();
     }
-
-
-    public Todo(String description) {
+    public Todo(int todoId, String description) {
+        this.todoId = todoId;
         this.description = description;
-        TodoId = TodoSequencer.NextTodoId();
-
     }
 
     public int getTodoId() {
-        return TodoId;
+        return todoId;
     }
-
-
 
     public String getDescription() {
         return description;

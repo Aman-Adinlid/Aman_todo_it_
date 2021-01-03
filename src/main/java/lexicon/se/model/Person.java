@@ -7,13 +7,17 @@ public class Person {
 
     private String firstName;
     private String lastName;
-    public Person(){
+
+    public Person() {
         personId = PersonSequencer.nextPersonId();
 
     }
 
-
-
+    public Person(int personId, String firstName, String lastName) {
+        this.personId = personId;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public int getPersonId() {
         return personId;
@@ -35,4 +39,3 @@ public class Person {
         this.lastName = lastName;
     }
 }
-
