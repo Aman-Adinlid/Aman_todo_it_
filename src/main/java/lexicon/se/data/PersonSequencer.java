@@ -2,15 +2,15 @@ package lexicon.se.data;
 
 public class PersonSequencer {
 
-    private static int sequencer= 0;
+    private static int personId = 0;
 
     public static int nextPersonId() {
 
-        return ++sequencer;
+        return ++personId;
     }
 
     public static void Reset() {
-        sequencer = 0;
+        personId= 0;
 
 
     }
