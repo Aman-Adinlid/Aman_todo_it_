@@ -10,22 +10,12 @@ public class TodoItems {
 
     public int size() {
         return todoItemsArray.length;
+
     }
 
-    public Todo[] findAllThingsTodo() {
-        return todoItemsArray;
-    }
-
-    public Todo findByTodoId(int todo_Id) {
-        Todo findTodo = new Todo();
-        int tempTodoId = 0;
-        for (int i = 0; i < todoItemsArray.length; i++) {
-            tempTodoId = todoItemsArray[i].getTodoId();
-            if (tempTodoId == todo_Id) {
-                findTodo = todoItemsArray[i];
-            }
-        }
-        return findTodo;
+   
+            
+        
     }
 
     public void addTodo(Todo newTodo )  {
